@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>HTMX Documentation</title>
+<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no'/>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="/static/style-out.css" rel="stylesheet">
+<script src="/static/htmx.js"></script>
+</head>
+<body>
+    <div class="m-8">
+        <!-- simple put request with a button -->
+        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" hx-put="/messages">
+            Put to Messages
+        </button>
+
+        <!-- Triggering Requests -->
+        <div hx-post="/mouse_entered" hx-trigger="mouseenter">
+            [Here Mouse, Mouse!]
+        </div>
+
+        <!-- Triggering Requests - Trigger Modifiers -->
+        <!-- changed - only if element has changed -->
+        <!-- delay:<time interval> wait the give amount of time -->
+        <!-- throttle:<time interval> -->
+        <!-- once - only once -->
+        <!-- from:<CSS Selector> -->
+        <div hx-post="/mouse_entered" hx-trigger="mouseenter once">
+            [Here Mouse, Mouse!]
+        </div>
+    </div>
+    
+
+</body>
+</html>
