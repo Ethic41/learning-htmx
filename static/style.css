@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/**
+ * -=-<[ Bismillahirrahmanirrahim ]>-=-
+ * Test CSS Styles
+ * @authors Dahir Muhammad Dahir (dahirmuhammad3@gmail.com)
+ * @date    2024-09-09 14:12:57
+ * @version 1.0.0
+ */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

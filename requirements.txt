@@ -1,0 +1,17 @@
+pydantic==2.6.4
+fastapi[all]==0.110.0
+pytest
+passlib
+python-jose
+python-dotenv
+alembic
+psycopg2-binary
+ulid-py
+SQLAlchemy==2.0.22
+inflect
+qrcode
+Pillow
+pydantic-settings
+requests
+google-cloud-storage
+jinja2
